@@ -1,5 +1,15 @@
+body {
+    position: relative;
+}
+
 section {
     padding: 20px 0;
+}
+
+/* Navbar */
+nav ul li a:hover {
+    background-color: #cf3327;
+    transition: .2s;
 }
 
 /* Slider */
@@ -8,6 +18,46 @@ section {
 .clients h3 {
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0,5);
 }
+
+/* Button WA */
+.button-wa {
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    right: 0;
+    border-radius: 5px 0 0 5px;
+    background-color: #075E54;
+    transform: translateX(160px);
+}
+
+.button-wa:hover {
+    transform: translate(0,0);
+    transition: all .7s ease-out;
+}
+
+.button-wa .icon {
+    border-right: 3px solid #075E54;
+    background-color: #25D366;
+    border-radius: 5px 0 0 5px;
+}
+
+.button-wa i {
+    font-size: 34px;
+    color: white;
+}
+
+.button-wa p {
+    color: white;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.button-wa i, .button-wa p {
+    padding: 10px;
+    margin: auto;
+}
+
+
 
 /* About Us */
 .about .row p {
@@ -50,5 +100,16 @@ section {
 
 /* Footer */
 footer {
-    padding: 5px 0;
+    padding: 2px 0;
+}
+
+
+/* Animate */
+.animate {
+    transform: translateX(-1500px);
+}
+
+.animate.show {
+    transform: translate(0,0);
+    transition: all 1s;
 }
