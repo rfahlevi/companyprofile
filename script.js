@@ -31,6 +31,8 @@ $(window).on('load', function() {
     $('.animate').each(function(i) {
         setTimeout(function() {
             $('.animate').eq(i).addClass('show');
-        }, 300 * i)
+        }, 200 * i)
     })
 });
+
+

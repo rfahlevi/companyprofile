@@ -19,45 +19,42 @@ nav ul li a:hover {
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0,5);
 }
 
-/* Button WA */
-.button-wa {
+/* button WA */
+.button-wa a {
     position: fixed;
-    z-index: 2;
     display: flex;
+    z-index: 2;
     right: 0;
-    border-radius: 5px 0 0 5px;
     background-color: #075E54;
+    color: white;
+    border-radius: 5px 0 0 5px;
     transform: translateX(160px);
 }
 
-.button-wa:hover {
+.button-wa a:hover {
     transform: translate(0,0);
-    transition: all .7s ease-out;
+    transition: .7s ease-out;
+}
+
+.button-wa .icon , .button-wa p {
+    margin: auto;
+    padding: 10px;
 }
 
 .button-wa .icon {
-    border-right: 3px solid #075E54;
     background-color: #25D366;
     border-radius: 5px 0 0 5px;
+    border-right: 1px solid #075E54;
 }
 
-.button-wa i {
+.button-wa .icon i {
     font-size: 34px;
-    color: white;
 }
 
 .button-wa p {
-    color: white;
-    font-weight: 500;
     font-size: 22px;
+    font-weight: 500;
 }
-
-.button-wa i, .button-wa p {
-    padding: 10px;
-    margin: auto;
-}
-
-
 
 /* About Us */
 .about .row p {
